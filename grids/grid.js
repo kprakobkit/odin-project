@@ -10,6 +10,10 @@ View.prototype.generateGrid = function() {
   var i;
   var j;
 
+  function changeColor() {
+    this.classList.add('blue');
+  }
+
   gridsElement = document.createElement('div');
   gridsElement.setAttribute('class', 'grids');
 
@@ -20,6 +24,7 @@ View.prototype.generateGrid = function() {
     for (j = 0; j < gridsPerRow; j++) {
       gridElement = document.createElement('div');
       gridElement.setAttribute('class', 'grid');
+      gridElement.addEventListener('mouseover', changeColor);
       rowElement.appendChild(gridElement);
     }
 
