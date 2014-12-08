@@ -1,0 +1,16 @@
+.container {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.row {
+  clear: both;
+}
